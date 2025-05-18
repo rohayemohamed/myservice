@@ -1,46 +1,115 @@
-﻿<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>روابطي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات الأمن السيبراني - [اسمك]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Cairo', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 1rem 2rem;
             text-align: center;
-            padding: 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
-        .link-card {
-            background-color: #fff;
-            padding: 15px 20px;
-            margin: 15px auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            width: 250px;
-        }
-
-            .link-card a {
-                text-decoration: none;
-                color: #0077ff;
-                font-size: 18px;
+            header h1 {
+                margin: 0;
+                font-size: 2rem;
             }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: #334155;
+            padding: 0.5rem;
+        }
+
+            nav a {
+                color: #f1f5f9;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    color: #38bdf8;
+                }
+
+        .section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+            .card h2 {
+                color: #38bdf8;
+                margin-top: 0;
+            }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1e293b;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>خدمات الأمن السيبراني</h1>
+        <p>تقديم حلول متكاملة لحماية الأنظمة والمواقع</p>
+    </header>
+    <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
 
-    <h2>اختر المنصة للتواصل معي</h2>
+    <section id="services" class="section">
+        <h2>خدماتنا</h2>
+        <div class="card">
+            <h2>اختبار الاختراق</h2>
+            <p>نقوم بمحاكاة هجمات حقيقية لاكتشاف الثغرات وتأمين الأنظمة ضد الاختراق.</p>
+        </div>
+        <div class="card">
+            <h2>تحليل الثغرات الأمنية</h2>
+            <p>تحليل شامل للثغرات الأمنية وإعداد تقارير مفصلة بالإصلاحات المقترحة.</p>
+        </div>
+        <div class="card">
+            <h2>تأمين المواقع والتطبيقات</h2>
+            <p>تطبيق أفضل ممارسات الأمن السيبراني لتأمين المواقع والتطبيقات من الهجمات.</p>
+        </div>
+    </section>
 
-    <div class="link-card">
-        <a href="https://www.facebook.com/share/1J4DMfC8mB/" target="_blank">فيسبوك</a>
-    </div>
+    <section id="about" class="section">
+        <h2>من نحن</h2>
+        <p>فريق من محترفي الأمن السيبراني نقدم خدمات عالية الجودة لأصحاب الأعمال والمطورين لضمان الحماية الكاملة من الهجمات الإلكترونية.</p>
+    </section>
 
-    <div class="link-card">
-        <a href="https://wa.me/201091136123" target="_blank">واتساب</a>
-    </div>
+    <section id="contact" class="section">
+        <h2>تواصل معنا</h2>
+        <p>راسلنا عبر البريد الإلكتروني: <a href="mailto:info@example.com">info@example.com</a></p>
+    </section>
 
-    <div class="link-card">
-        <a href="https://www.instagram.com/rohayemohamed?igsh=MWM1ZncwMXNwdWVm" target="_blank">إنستجرام</a>
-    </div>
+    <footer>
+        &copy; 2025 جميع الحقوق محفوظة - [اسمك أو اسم شركتك]
+    </footer>
 </body>
 </html>
