@@ -2,114 +2,106 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات الأمن السيبراني - [اسمك]</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>شركة تصميم مواقع</title>
     <style>
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #0f172a;
-            color: #f1f5f9;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            background-color: #f5f5f5;
         }
 
         header {
-            background-color: #1e293b;
-            padding: 1rem 2rem;
+            background-color: #202842;
+            color: white;
+            padding: 30px;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
-            header h1 {
-                margin: 0;
-                font-size: 2rem;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+            .project-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
             }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            background-color: #334155;
-            padding: 0.5rem;
+        .project-info {
+            padding: 15px;
         }
 
-            nav a {
-                color: #f1f5f9;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-                nav a:hover {
-                    color: #38bdf8;
-                }
-
-        .section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
+        .athlete-image {
+            text-align: center;
+            margin: 50px 0;
         }
 
-        .card {
-            background-color: #1e293b;
-            padding: 1rem;
-            border-radius: 1rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-            .card h2 {
-                color: #38bdf8;
-                margin-top: 0;
+            .athlete-image img {
+                width: 60%;
+                max-width: 600px;
+                border-radius: 12px;
             }
 
         footer {
+            background-color: #202842;
+            color: white;
+            padding: 30px;
             text-align: center;
-            padding: 1rem;
-            background-color: #1e293b;
-            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>خدمات الأمن السيبراني</h1>
-        <p>تقديم حلول متكاملة لحماية الأنظمة والمواقع</p>
+        <h1>شركة الإبداع لتصميم مواقع الويب</h1>
+        <p>نحن نصمم مواقع عصرية واحترافية لمختلف الأنشطة</p>
     </header>
-    <nav>
-        <a href="#services">الخدمات</a>
-        <a href="#about">من نحن</a>
-        <a href="#contact">تواصل معنا</a>
-    </nav>
 
-    <section id="services" class="section">
-        <h2>خدماتنا</h2>
-        <div class="card">
-            <h2>اختبار الاختراق</h2>
-            <p>نقوم بمحاكاة هجمات حقيقية لاكتشاف الثغرات وتأمين الأنظمة ضد الاختراق.</p>
+    <section class="projects">
+        <div class="project-card">
+            <img src="project1.jpg" alt="مشروع 1">
+            <div class="project-info">
+                <h3>مشروع مطعم</h3>
+                <p>موقع تعريفي احترافي لمطعم شرقي</p>
+            </div>
         </div>
-        <div class="card">
-            <h2>تحليل الثغرات الأمنية</h2>
-            <p>تحليل شامل للثغرات الأمنية وإعداد تقارير مفصلة بالإصلاحات المقترحة.</p>
+        <div class="project-card">
+            <img src="C:\Users\Rohyem\Pictures\Screenshots\Screenshot 2025-05-23 202255.png" alt="مشروع 2">
+            <div class="project-info">
+                <h3>مشروع متجر</h3>
+                <p>موقع تجارة إلكترونية لبيع المنتجات</p>
+            </div>
         </div>
-        <div class="card">
-            <h2>تأمين المواقع والتطبيقات</h2>
-            <p>تطبيق أفضل ممارسات الأمن السيبراني لتأمين المواقع والتطبيقات من الهجمات.</p>
+        <div class="project-card">
+            <img src="C:\Users\Rohyem\Pictures\Screenshots\Screenshot 2025-05-23 204344.png" alt="مشروع 3">
+            <div class="project-info">
+                <h3>صفحة ويب لجيم لبيع المكملات وعرض نتائج العملاء</h3>
+                <p>موقع تعريفي بخدمات الشركة وأعمالها</p>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h2>من نحن</h2>
-        <p>فريق من محترفي الأمن السيبراني نقدم خدمات عالية الجودة لأصحاب الأعمال والمطورين لضمان الحماية الكاملة من الهجمات الإلكترونية.</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>تواصل معنا</h2>
-        <p>راسلنا عبر البريد الإلكتروني: <a href="mailto:info@example.com">info@example.com</a></p>
-    </section>
+    <div class="athlete-image">
+        <img src="athlete.jpg" alt="رياضي">
+    </div>
 
     <footer>
-        &copy; 2025 جميع الحقوق محفوظة - [اسمك أو اسم شركتك]
+        <h2>تواصل معنا</h2>
+        <p>رقم الهاتف: 01012345678</p>
+        <p>البريد الإلكتروني: example@company.com</p>
+        <p>أو تواصل معنا على واتساب - إنستجرام</p>
     </footer>
+
 </body>
 </html>
